@@ -1,0 +1,51 @@
+URxvt.background:	#050607
+URxvt.foreground:	#FAFAFA
+URxvt.cursorColor:	#EDEDED
+URxvt.scrollColor:	#DEDDDC
+URxvt.troughColor:	#FAF9F8
+
+URxvt.color0:	#242629
+URxvt.color8:	#373B41
+URxvt.color1: 	#A54242
+URxvt.color9:	#CC6666
+URxvt.color2:	#82893D
+URxvt.color10:	#9AA436
+URxvt.color3:	#FF842F
+URxvt.color11:	#F6B432
+URxvt.color4:	#356E9D
+URxvt.color12:	#6C98BE
+URxvt.color5:	#664072
+URxvt.color13:	#B98FC5
+URxvt.color6:	#2A8479
+URxvt.color14:	#77C3B9
+URxvt.color7:	#74777b
+URxvt.color15:	#DBDBDB
+
+
+
+URxvt.geometry:			86x26
+URxvt.fading:			10
+URxvt.scrollBar:		False
+URxvt.scrollstyle:		plain
+URxvt.thickness:		1
+URxvt.scrollBar_right:		True
+URxvt.scrollBar_floating:	True
+URxvt.secondaryScreen: 		1
+URxvt.secondaryScroll:		0
+URxvt.saveLines:		10000
+URxvt.cursorUnderline:		1
+URxvt.cursorBlink:		True
+URxvt.internalBorder:		5
+URxvt.scrollTtyOutput:		False
+URxvt.scrollTtyKeypress:	True
+
+URxvt.perl-lib: /home/teknosquet/.urxvt-perl
+URxvt.perl-ext: unichr
+URxvt.perl-ext-common:
+
+URxvt.keysym.Shift-Control-C:	eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V:	eval:paste_clipboard
+URxvt.iso14755:			False
+
+URxvt.font:		xft:Iosevka Term SS04:pixelsize=14:antialias=true,xft:DejaVuMonoSans Nerd Font:style=Regular:pixelsize=14
+URxvt.letterSpace:	1

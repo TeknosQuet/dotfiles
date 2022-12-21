@@ -1,0 +1,104 @@
+; teknosquet
+
+
+[settings]
+pseudo-transparency = false
+
+
+
+[bar/main]
+monitor = DP-0
+enable-ipc = true
+locale = en_US.UTF-8
+
+fixed-center = true
+width = 100% 
+height = 26
+background = #BF000000
+foreground = #FFFFFF
+padding = 0
+spacing = 1
+bottom = false
+;separator = " | " 
+;separator-padding = 2
+override-redirect = true
+border-size = 5
+border-color = #BF000000
+
+font-0 = Iosevka Term SS04:size=10.5;2
+font-1 = Font Awesome 6 Free Solid:style=Regular:size=10.8;2
+font-2 = Font Awesome 6 Brands Regular:style=Regular:size=10.8;2
+font-3 = Noto Emoji:scale=9;2
+
+tray-position = center
+tray-maxsize = 24
+tray-offset-y = -33
+tray-detached = true
+
+modules-left = username separator separator title
+modules-center = 
+modules-right = date
+
+
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+blacklist-2 = caps lock
+
+[module/date]
+type = internal/date
+interval = 0.5 
+time = %I:%M %p
+label = "  %time% "
+format-background = #CC6666
+
+[module/username]
+type = custom/script
+exec = echo "  $(whoami) "
+format-background = #6C98BE
+
+[module/filesystem]
+type = internal/fs
+mount-0 = /
+mount-1 = /hdd
+interval = 8
+spacing = 2
+warn-percentage = 85
+label-mounted = %mountpoint%: %percentage_used%%
+label-unmounted = 
+label-warn = %mountpoint%: %percentage_used%% [!]
+
+[module/pulse]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 1 
+format-volume = AUD: <label-volume> 
+label-muted = MUTED
+click-right = pavucontrol
+
+[module/ws]
+type = internal/xworkspaces
+enable-click = true
+enable-scroll = true
+reverse-scroll = true
+format = <label-state>
+label-active = %name%
+label-active-background = #B1FE9100 
+label-active-padding = 2
+label-urgent-padding = 2
+label-empty-padding = 2
+
+[module/title]
+type = internal/xwindow
+format = <label>
+format-padding = 0
+label =  %title%
+label-maxlen = 80
+label-empty = 
+
+[module/separator]
+type = custom/script
+exec = echo "%{T4} %{T-}"
+format-background = #BF000000

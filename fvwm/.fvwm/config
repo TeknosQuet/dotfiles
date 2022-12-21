@@ -1,0 +1,67 @@
+# Desktop
+DesktopSize 1x1
+EWMHBaseStruts screen DP-0 8 8 40 8
+EWMHBaseStruts screen HDMI-0 8 8 8 8
+CursorStyle POSITION left_ptr
+CursorStyle TITLE left_ptr
+CursorStyle DEFAULT left_ptr
+CursorStyle MENU left_ptr
+
+# Colors
+# = # = # Title (inactive, active)
+Colorset 1 fg #EBEBEB, bg #202020
+Colorset 2 fg #EBEBEB, bg #202020
+# = # = # Border (inactive, active)
+Colorset 3 fg #445262, bg #445262
+Colorset 4 fg #356E9D, bg #356E9D
+
+# Functions
+DestroyFunc MoveMaximizeWindow
+AddToFunc MoveMaximizeWindow
+	+ I Raise
+	+ M Move
+	+ D Maximize $0 $1
+
+DestroyFunc ResizeWindow
+AddtoFunc ResizeWindow
+	+ I Raise
+	+ M Resize
+
+# Windows
+OpaqueMoveSize 100
+MoveThreshold 1
+SnapAttraction 3
+HideGeometryWindow Always
+Style * BorderWidth 2, HandleWidth 2
+Style * FPGrabFocus
+Style * FPReleaseFocus
+Style * SloppyFocus
+Style * MouseFocusClickRaises
+Style * ResizeOpaque
+Style * NoTitle
+Style * PositionPlacement UnderMouse
+#Style * DecorateTransient
+#Style * MWMBorder
+#Style * MWMButtons
+BorderStyle Inactive Colorset 3 -- HiddenHandles Flat
+BorderStyle Active Colorset 4 -- HiddenHandles Flat
+
+# Application-specific Windows
+Style "Stick Fight*" Lenience, HintOverride
+
+# Fonts
+DefaultFont "xft:Iosevka Term SS04:style=Regular:size=10:antialias=true"
+
+# Keybindings
+IgnoreModifiers L25
+Key Return A 4 Exec urxvtc
+Key p A 4 Exec rofi -show drun -show-icons
+Key Print A N Exec scrot -q 80 -s -f -z -e 'xclip -selection clipboard -t image/png -i $f && rm -rf $f'
+Key Print A 4 Exec scrot -b -q 80 -u -z -e 'xclip -selection clipboard -t image/png -i $f && rm -rf $f'
+Key q A 4 Close
+Key i A 4 FvwmIdent
+Key F11 A 4 Maximize Fullscreen
+
+# Mousebindings
+Mouse 1 W 4 MoveMaximizeWindow
+Mouse 3 FSW 4 ResizeWindow
