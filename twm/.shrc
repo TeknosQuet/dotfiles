@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Environment Variables
+XDG_RUNTIME_DIR=/tmp/users/$(id -u)
+export XDG_RUNTIME_DIR
+export TERM=xterm-256color
+export PATH="$PATH":"$HOME"/.local/bin
+
+# Aliases
+alias ls="ls -lah --color=always"
+alias clear="clear && printf '\033c'"
+
+# PS1
+PS1="[\w] % "

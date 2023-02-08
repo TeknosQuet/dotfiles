@@ -1,0 +1,50 @@
+# Cursor
+Cursors{
+	Frame	"left_ptr"
+	Title	"left_ptr"
+	Icon	"left_ptr"
+	IconMgr	"left_ptr"
+	Move	"fleur"
+	Resize	"top_right_corner"
+	Menu	"left_ptr"
+	Button	"hand2"
+	Wait	"exchange"
+	Select	"left_ptr"
+	Destroy	"pirate"
+}
+
+
+# Keybindings
+"Return" = m4	: all		: ! "exec /usr/bin/env xterm &"
+"q" = m4 | s	: all		: f.quit
+"r" = m4 | s	: all		: f.restart
+"q" = m4		: w | f | t	: f.destroy
+"x" = m4		: w | f | t : f.leftzoom
+"Print" = 		: all		: ! "exec /usr/bin/env scrot -q 80 -s -f -z -e 'xclip -selection clipboard -t image/png -i $f && rm -f $f' &"
+"Print" = m4	: w | f | t	: ! "exec /usr/bin/env scrot -b -q 80 -u -z -e 'xclip -selection clipboard -t image/png -i $f && rm -f $f' &"
+
+# Mousebindings
+Button1 = m4	: w | f | t	: f.move
+Button3 = m4	: w | f | t	: f.resize
+
+
+# Windows
+NoGrabServer
+OpaqueMove
+MoveDelta 3
+ConstrainedMoveTime 0
+BorderWidth 0
+ClientBorderWidth 0
+ButtonIndent 0
+IconBorderWidth 0
+TitleButtonBorderWidth 0
+NoTitle
+NoHighlight
+AutoRelativeResize
+NoStackMode
+
+# Icon Manager
+NoIconManagers
+
+# Miscellaneous
+NoDefaults

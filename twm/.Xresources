@@ -1,0 +1,38 @@
+XTerm*foreground:	#FAFAFA
+XTerm*background:	#050607
+XTerm*cursorColor:	#FAFAFA
+
+XTerm*color0:       #121212
+XTerm*color8:       #484848
+XTerm*color1:       #AA2626
+XTerm*color9:       #FC6A6A
+XTerm*color2:       #8D982B
+XTerm*color10:      #C6F25A
+XTerm*color3:       #FE9839
+XTerm*color11:      #FFCF5E
+XTerm*color4:       #325C7F
+XTerm*color12:      #A8D3F8
+XTerm*color5:       #70447F
+XTerm*color13:      #D986F2
+XTerm*color6:       #39B5A6
+XTerm*color14:      #94E0D5
+XTerm*color7:       #AAAAAA
+XTerm*color15:      #E6E6E6
+
+
+
+XTerm.termName:	xterm-256color
+
+XTerm*locale:				false
+XTerm*utf8:					true
+XTerm*metaSendsEscape:		true
+XTerm*scrollBar:			false
+XTerm*cursorBlink:			true
+XTerm*selectToClipboard:	true
+
+XTerm*geometry:			80x24
+XTerm*saveLines:		3072
+XTerm*internalBorder:	7
+
+
+XTerm*faceName:	Input:style=Regular:pixelsize=14
