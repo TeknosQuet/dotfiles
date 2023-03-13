@@ -1,0 +1,36 @@
+xterm*foreground:	#F6F6F6
+xterm*background:	#090909
+xterm*cursorColor:	#F6F6F6
+
+xterm*color0:	#222222
+xterm*color8:	#666666
+xterm*color1:	#882222
+xterm*color9:	#BF4949
+xterm*color2:	#5A812A
+xterm*color10:	#69D169
+xterm*color3:	#C06530
+xterm*color11:	#EEC050
+xterm*color4:	#3A3ABB
+xterm*color12:	#6080BB
+xterm*color5:	#6A5077
+xterm*color13:	#997CBB
+xterm*color6:	#4BA0A0
+xterm*color14:	#70DDD0
+xterm*color7:	#999999
+xterm*color15:	#CFCFCF
+
+xterm.termName:	xterm-256color
+
+xterm*locale:				false
+xterm*utf8:					true
+xterm*metaSendsEscape:		true
+xterm*scrollBar:			false
+xterm*cursorBlink:			false
+xterm*selectToClipboard:	true
+
+xterm*geometry:			80x24
+xterm*saveLines:		3072
+xterm*internalBorder:	6
+
+xterm*faceName:	RecMonoLinear Nerd Font
+xterm*faceSize:	10
