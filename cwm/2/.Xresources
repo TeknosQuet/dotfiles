@@ -1,0 +1,36 @@
+xterm*foreground:	#F6F6F6
+xterm*background:	#090909
+xterm*cursorColor:	#F6F6F6
+
+xterm*color0:	#191919
+xterm*color8:	#2B2B2B
+xterm*color1:	#BE3232
+xterm*color9:	#D25A5A
+xterm*color2:	#87A035
+xterm*color10:	#BEE664
+xterm*color3:	#E68C5A
+xterm*color11:	#F5C36E
+xterm*color4:	#5A82C8
+xterm*color12:	#87A0D2
+xterm*color5:	#916487
+xterm*color13:	#BE8CB4
+xterm*color6:	#648796
+xterm*color14:	#87B9C8
+xterm*color7:	#787D82
+xterm*color15:	#CDD2CD
+
+xterm.termName:	xterm-256color
+
+xterm*locale:				false
+xterm*utf8:					true
+xterm*metaSendsEscape:		true
+xterm*scrollBar:			false
+xterm*cursorBlink:			false
+xterm*selectToClipboard:	true
+
+xterm*geometry:			80x24
+xterm*saveLines:		3072
+xterm*internalBorder:	6
+
+xterm*faceName:	Rec Mono Linear
+xterm*faceSize:	10

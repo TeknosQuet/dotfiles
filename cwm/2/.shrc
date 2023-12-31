@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Launch tmux if present
+# { [ "$(command -v tmux)" ] && [ ! "$TERM" = "tmux-256color" ]; } && exec /usr/bin/env tmux
+
+# Environment Variables
+export XDG_SESSION_TYPE=x11
+export PATH="$PATH":"$HOME"/.local/bin:/usr/local/nim/bin
+export GPG_TTY=$(tty)
+export CC=clang
+export TERM=xterm-256color
+
+# Aliases
+alias ls="ls -lah --color=always"
+alias clear="clear && printf '\033c'"
+alias xclip="xclip -selection clipboard"
+
+# PS1
+PS1="[\w] % "

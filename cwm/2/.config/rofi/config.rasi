@@ -1,0 +1,37 @@
+configuration {
+	modi: "drun";
+	font: "Rec Mono Linear 12";
+	show-icons: true;
+	terminal: "xterm";
+	threads: 1;
+}
+
+* {
+	bg: #F6F6F6;
+	fg: #191919;
+	border-color: #D25A5A;
+}
+
+window {
+	background-color: @bg;
+	border: 2px;
+	padding: 6px;
+	width: 40%;
+}
+
+listview {
+	scrollbar: false;
+}
+
+element {
+	padding: 3px;
+	spacing: 7px;
+}
+
+element normal.normal, element alternate.normal {
+	background-color: #CDD2CD;
+}
+
+element-text {
+	text-color: @fg;
+}
