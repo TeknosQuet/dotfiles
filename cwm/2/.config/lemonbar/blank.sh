@@ -1,7 +1,7 @@
 #!/bin/sh
 
-while [ "$(lsof -c lemonbar)" ]
-do
-	echo " "
+while [ "$(pgrep -x lemonbar)" ]; do
+	printf ""
 	sleep 600
 done
+

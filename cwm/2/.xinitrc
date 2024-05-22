@@ -16,7 +16,7 @@ xwallpaper --center "$HOME"/wp.jpeg &
 xsetroot -cursor-name left_ptr &
 
 #picom --backend glx --config "$HOME"/.config/picom/picom.conf &
-"$HOME"/.config/lemonbar/bar.sh &
+"$HOME"/.config/lemonbar/init.sh &
 
 #pipewire &
 #pipewire-pulse &
