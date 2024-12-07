@@ -9,7 +9,7 @@ deps_met=true  # Set flag variable
 # Loop through pseudo-array, set deps_met=false if missing
 # dependencies, and print accordingly
 for dep in "$@"; do
-	[ "$(command -v "$(dep)")" ] || {
+	[ "$(command -v "$dep")" ] || {
 		deps_met=false
 		printf "%s\n" "\"$dep\" is required to run this configuration"
 	}
